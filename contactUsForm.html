@@ -3,7 +3,7 @@
     <head>
         <title>Contact Us</title>
         <style>
-            label {
+            label, p {
                 display: inline-block;
                 width: 170px;
                 text-align: right;
@@ -27,11 +27,12 @@
     </head>
     <body>
         <form action="#" method="post">
-            <div>
+            <div>       
                 <label id="firstNameLabel" for="firstName">First Name: </label>
                 <input id="firstName" name="firstName" type="text" />
             </div>
             <br/>
+
             <div>
                 <label id="lastNameLabel" for="lastName">Last Name: </label>
                 <input id="lastName" name="lastName" type="text" />
@@ -41,14 +42,14 @@
                 <label id="emailLabel" for="email"> Email: </label>
                 <input id="email" name="email" type="text" />
             </div>
-            <br/>
-            <div>Type of License:
+    
+            <div><p>Type of License:</p>
                 <input type="radio" name="licenseType" value="Business" checked/>Business
                 <input type="radio" name="licenseType" value="Personal"        />Personal
             </div>
-            <br/>
 
-            <div>Reason:
+            <div>
+                <p>Reason</p>
                 <select name="Reason">
                     <option value="Select a Reason">Select a Reason</option>
                     <option value="Software Support">Software Support</option>
@@ -56,15 +57,15 @@
                     <option value="Information Request">Information Request</option>
                 </select>
             </div>
-            <br/>
 
-            <div>Additional Information:
+            <div>
+                <p>Additional Information: </p>
                 <textarea name="additionalInformation"></textarea><br/>
             </div>
             <br/>
             <div>
                 <input type="checkbox" name="serviceTerms" value="I have read the terms"/>
-                I have read the terms of service<br/>
+                I have read the terms of service
             </div>
             <br/>
             <div>
